@@ -7,10 +7,12 @@ exec 1> >(logger -s -t $(basename $0)) 2>&1
 FILE="$HOME/.session/rtorrent.lock"
 
 # Where to save PID file
-FILE_PID="$HOME/skrypty/PID"
+FILE_PID="$HOME/rtorrent_PID/PID"
 
-# HDD mouting point
-volume="/media/WoodBox_HDD"
+# IMPORTANT!!
+# HDD mouting path -->
+volume="/media/mouting/path"
+# ------
 
 function checkPID
 {
